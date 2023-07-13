@@ -33,10 +33,11 @@ class Solution:
             help = str(num)
             for i in range(len(help)):
                  count += int(help[i])
-            return count % 10
-            
-            #TODO: Write code below to returnn an int with the solution to the prompt.
-            pass
+            if count % 10 >= 10:
+                 return self.digitdecrypt(self, count%10)
+            else:
+                 return count
+
  
 def main():
     input1= input()
