@@ -33,8 +33,8 @@ class Solution:
             help = str(num)
             for i in range(len(help)):
                  count += int(help[i])
-            if count % 10 >= 10:
-                 return self.digitdecrypt(self, count%10)
+            if count >= 10:
+                 return self.digitdecrypt(self, count)
             else:
                  return count
 
