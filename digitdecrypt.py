@@ -33,7 +33,7 @@ class Solution:
             help = str(num)
             for i in range(len(help)):
                  count += int(help[i])
-            return count
+            return count % 10
             
             #TODO: Write code below to returnn an int with the solution to the prompt.
             pass
