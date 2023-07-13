@@ -34,9 +34,8 @@ class Solution:
             for i in range(len(help)):
                  count += int(help[i])
             if count >= 10:
-                 return self.digitdecrypt(self, count)
-            else:
-                 return count
+                count = self.digitdecrypt(self, count)
+            return count
 
  
 def main():
