@@ -29,13 +29,9 @@ Input: 0 Output: 0
 
 class Solution:    
     def digitdecrypt(self, num):
-            count = 0
-            help = str(num)
-            for i in range(len(help)):
-                 count += int(help[i])
-            if count >= 10:
-                count = self.digitdecrypt(self, count)
-            return count
+            while num > 9:
+                num = sum(int(digit) for digit in str(num))
+            return num
 
  
 def main():
